@@ -1,0 +1,34 @@
+# https://kcpoipoi.hatenablog.com/entry/2020/07/27/120438
+
+input-files:
+  - report.md
+  
+output-file: 17423.pdf
+
+pdf-engine: lualatex
+
+variables:
+  documentclass: ltjsarticle
+  classoption: pandoc
+  indent: true
+  geometry:
+    - top=20mm
+    - right=24mm
+    - left=24mm
+    - bottom=20mm
+    - heightrounded
+
+metadata:
+  figureTitle: "図 "
+  tableTitle: "表 "
+  listingTitle: "リスト "
+  figPrefix: "図."
+  eqnPrefix: "式."
+  tblPrefix: "表."
+  lstPrefix: "リスト."
+
+
+number-sections: true
+
+filters:
+  - /usr/lib/pandoc-crossref
