@@ -13,9 +13,10 @@ variables:
   indent: true
   fontsize: 10pt
   colorlinks: true
-  urlcolor: "bule"
+  urlcolor: "blue"
   toccolor: "gray"
   linkcolor: "red"
+  anchorcolor: "red"
 
   geometry:
     - top=20mm
