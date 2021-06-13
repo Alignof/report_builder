@@ -11,6 +11,12 @@ variables:
   documentclass: ltjsarticle
   classoption: pandoc
   indent: true
+  fontsize: 10pt
+  colorlinks: true
+  urlcolor: "bule"
+  toccolor: "gray"
+  linkcolor: "red"
+
   geometry:
     - top=20mm
     - right=24mm
