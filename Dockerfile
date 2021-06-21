@@ -12,6 +12,7 @@ RUN tlmgr install \
       tcolorbox \
       luatexja
 RUN tlmgr update --self --all
+RUN pip install pygments
 RUN wget -O - https://github.com/lierdakil/pandoc-crossref/releases/download/v0.3.8.4/pandoc-crossref-Linux.tar.xz | \
   tar Jxf - \
   && mv pandoc-crossref /usr/lib/ \
