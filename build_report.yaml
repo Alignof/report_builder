@@ -45,3 +45,4 @@ number-sections: true
 
 filters:
   - /usr/lib/pandoc-crossref
+  - /usr/lib/pandoc-minted.py
