@@ -6,8 +6,12 @@ input-files:
 output-file: 17423.pdf
 
 pdf-engine: lualatex
+pdf-engine-opts:
+    - "-shell-escape"
 
 listings: true
+include-in-header:
+    - ./listings-setup.tex
 
 variables:
   documentclass: ltjsarticle
