@@ -7,12 +7,15 @@
 \usepackage{catchfile, fvextra, xstring, environ, xcolor}
 \usepackage{accsupp}
 \usepackage[most, theorems, listings, minted, breakable]{tcolorbox}
+\usemintedstyle{monokai}
 
 \definecolor{bg}{HTML}{333333}
 \definecolor{line}{HTML}{000000}
 \definecolor{bill}{RGB}{229,225,225}
 
+\usepackage{caption}
 \newenvironment{longlisting}{\captionsetup{type=listing}}{}
+\newcounter{listings}
 
 \setminted{
     linenos=true,
