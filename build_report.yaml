@@ -3,7 +3,7 @@
 input-files:
   - report.md
   
-output-file: 17423.pdf
+output-file: 17423.tex
 
 pdf-engine: lualatex
 pdf-engine-opts:
@@ -44,5 +44,5 @@ metadata:
 number-sections: true
 
 filters:
+  - /usr/lib/pandoc-minted.py
   - /usr/lib/pandoc-crossref
-#  - /usr/lib/pandoc-minted.py
