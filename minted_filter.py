@@ -28,6 +28,7 @@ def unpack_code(value, language):
 
     caption = ""
     title = ""
+    label = ""
     [[label, classes, attributes], contents] = value
 
     if len(classes) > 0:
