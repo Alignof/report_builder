@@ -33,8 +33,8 @@ int main(void){
 \end{longlisting}
 
 # 掃き出し法の実装
-掃き出し法の実装を示す．
-```{.python caption="掃き出し法の実装"}
+掃き出し法の実装を[@lst:sweep]に示す．
+```{.python #lst:sweep caption="掃き出し法の実装" title="sweep.py"}
 b = [[2, 3, 4, 6],
      [3, 5, 2, 5],
      [4, 3, 30, 32]]
