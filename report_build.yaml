@@ -44,5 +44,5 @@ metadata:
 number-sections: true
 
 filters:
-  - /usr/lib/pandoc-minted.py
+  - /usr/lib/minted_filter.py
   - /usr/lib/pandoc-crossref
