@@ -11,7 +11,7 @@ pdf-engine-opts:
 
 listings: true
 include-in-header:
-    - ./listings-setup.tex
+    - /usr/lib/listings-setup.tex
 
 variables:
   documentclass: ltjsarticle
