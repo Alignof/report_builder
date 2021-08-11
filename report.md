@@ -6,6 +6,32 @@ listings: True
 codeBlockCaptions: True
 ---
 
+# mintedのテスト
+\begin{longlisting}
+\begin{myminted}{cpp}{example}
+#include <stdio.h>
+#include <omp.h>
+#define N 1000000
+int main(void){
+    int i,j,count0;
+    int a[N];
+    for(i=0;i<N;i++) a[i]=i%100;
+    for(l=0;l<100000;l++){
+        coutn0=0;
+        #pragma omp parallel for reduction(+:count0) num\_threads(4)
+        for(i=0;i<N;i++){
+            if(a[i]==0) count0++;
+        }
+    }
+    printf("count0:\%d\n",count0);
+
+    return 0;
+}
+\end{myminted}
+\caption{リストの例}
+\label{lst:}
+\end{longlisting}
+
 # 掃き出し法の実装
 掃き出し法の実装を示す．
 ```{.python caption="掃き出し法の実装"}
