@@ -8,5 +8,5 @@ $ docker build . -t report_builder
 
 ## run
 ```zsh
-$ 
+$ sudo docker run --rm --volume "$(pwd):/data" report_builder
 ```
