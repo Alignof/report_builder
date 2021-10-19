@@ -1,5 +1,6 @@
 FROM pandoc/latex:2.11.2
 ENTRYPOINT ["sh", "/usr/lib/build.sh"]
+RUN tlmgr update --self --all
 RUN tlmgr install \
       ipaex \
       haranoaji \
@@ -12,7 +13,6 @@ RUN tlmgr install \
       accsupp \
       tcolorbox \
       luatexja
-RUN tlmgr update --self --all
 RUN apk add python3 py3-pip py3-pygments
 RUN ln -s /usr/bin/python3 /usr/bin/python
 RUN pip3 install pandocfilters
