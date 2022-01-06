@@ -7,7 +7,6 @@
 \usepackage{accsupp}
 \usepackage[cache=false]{minted}
 \usepackage[most, theorems, listings, minted, breakable]{tcolorbox}
-\usemintedstyle{monokai}
 
 \definecolor{bg}{HTML}{333333}
 \definecolor{line}{HTML}{000000}
@@ -26,6 +25,7 @@
     theorem={Listing}{listings}{#3}{},
      fonttitle=\scriptsize\bfseries,
      listing engine=minted,
+     minted style=custom,
      minted language=#2,
      colback=bg,
      minted options={%

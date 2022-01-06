@@ -13,8 +13,15 @@ RUN tlmgr install \
       accsupp \
       tcolorbox \
       luatexja
-RUN apk add python3 py3-pip py3-pygments
+RUN apk add python3 py3-pip 
 RUN ln -s /usr/bin/python3 /usr/bin/python
+RUN wget --no-check-certificate -O pygments-rs https://github.com/Alignof/pygments-rs/tarball/master \
+    && mkdir pygments \
+    && tar xzf pygments-rs -C pygments --strip-components 1 \
+    && cd pygments \
+    && python setup.py install \
+    && cd .. \
+    && rm -rf pygments*
 RUN pip3 install pandocfilters
 RUN wget -O - https://github.com/lierdakil/pandoc-crossref/releases/download/v0.3.12.1a/pandoc-crossref-Linux.tar.xz | \
   tar Jxf - \
