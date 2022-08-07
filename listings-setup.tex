@@ -12,6 +12,10 @@
 \definecolor{line}{HTML}{000000}
 \definecolor{bill}{RGB}{229,225,225}
 
+\renewcommand{\theFancyVerbLine}{\bfseries
+    \textcolor[rgb]{0.0,0.0,0.0}{\scriptsize
+        \oldstylenums{\arabic{FancyVerbLine}}}}
+
 \usepackage{caption}
 \newenvironment{longlisting}{\captionsetup{type=listing}}{}
 \newcounter{listings}
@@ -28,6 +32,7 @@
      minted style=custom,
      minted language=#2,
      colback=bg,
+     colupper=white,
      minted options={%
          linenos,
          breaklines, 
